@@ -7,6 +7,7 @@
 <body>
 <title>Number Shift</title>
 <meta name="claude:viewport-fit-sides" content="cover">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%233a2413'/%3E%3Cg fill='%23dcbb85'%3E%3Crect x='8' y='8' width='14' height='14' rx='3'/%3E%3Crect x='25' y='8' width='14' height='14' rx='3'/%3E%3Crect x='42' y='8' width='14' height='14' rx='3'/%3E%3Crect x='8' y='25' width='14' height='14' rx='3'/%3E%3Crect x='25' y='25' width='14' height='14' rx='3'/%3E%3Crect x='42' y='25' width='14' height='14' rx='3'/%3E%3Crect x='8' y='42' width='14' height='14' rx='3'/%3E%3Crect x='25' y='42' width='14' height='14' rx='3'/%3E%3C/g%3E%3C/svg%3E">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap">
 <style>
 /* Layout: a quiet header, a two-column hero with a half-solved board, then the live game in a framed panel. Dark-first, wood board and brass tiles as the one warm material. */
@@ -73,6 +74,9 @@ p{margin:0;}
 .nav a{color:var(--text-dim); text-decoration:none; font-size:.92rem; padding:8px 12px; border-radius:999px;}
 .nav a:hover{color:var(--text); background:var(--panel-alt);}
 .nav a:focus-visible, .wordmark:focus-visible{outline:2px solid var(--accent); outline-offset:2px;}
+
+.wordmark{display:inline-flex; align-items:center; gap:10px;}
+.wordmark .logo{flex-shrink:0; border-radius:7px; box-shadow:0 2px 6px rgba(0,0,0,.35);}
 
 /* hero */
 .hero{display:grid; grid-template-columns:1.1fr .9fr; gap:40px; align-items:center; padding-block:36px 56px;}
@@ -315,7 +319,7 @@ p{margin:0;}
 
 <div class="wrap">
   <header class="site-header">
-    <a class="wordmark" href="#top">Number Shift</a>
+    <a class="wordmark" href="#top"><svg class="logo" viewBox="0 0 64 64" width="26" height="26" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#3a2413"/><g fill="#dcbb85"><rect x="8" y="8" width="14" height="14" rx="3"/><rect x="25" y="8" width="14" height="14" rx="3"/><rect x="42" y="8" width="14" height="14" rx="3"/><rect x="8" y="25" width="14" height="14" rx="3"/><rect x="25" y="25" width="14" height="14" rx="3"/><rect x="42" y="25" width="14" height="14" rx="3"/><rect x="8" y="42" width="14" height="14" rx="3"/><rect x="25" y="42" width="14" height="14" rx="3"/></g></svg>Number Shift</a>
     <nav class="nav" aria-label="Site">
       <a href="#play">Play</a>
       <a href="#how" class="hide-sm">How to play</a>
